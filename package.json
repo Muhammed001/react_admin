@@ -1,0 +1,27 @@
+{
+  "name": "react_admin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --open chrome --port 3000 --host 127.0.0.1 --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muhammed001/react_admin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Muhammed001/react_admin/issues"
+  },
+  "homepage": "https://github.com/Muhammed001/react_admin#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.9.0"
+  }
+}
