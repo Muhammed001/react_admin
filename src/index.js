@@ -15,10 +15,29 @@ import ReactDom from 'react-dom' //把创建好的组件和虚拟Dom放到页面
 
 //编写类HTML代码（使用babel来转换Js中的标签）叫做jsx语法（符合xml规范的js）
 //jsx语法本质，在运行的时候被转成了React.createElement形式来执行
-const myTest=<div>这是类html文件代码</div>
+const myTest = <div>这是类html文件代码</div>
+let test_num_01 = 10
+const test_dom_01 = [<h1>h1Dom</h1>, <hr />, <h3>h3Dom</h3>]
+const arrname=["老王","刘主任","一休","发哥","钗"];
+
+//数组的map方法
+const arrStr=arrname.map(item=>{
+    return <h5>{item}</h5>
+})
+console.log(arrStr)
 
 //3.使用ReactDom将虚拟Dom渲染到页面上
 //参数1：要渲染的Dom
 //参数2：指定页面上一个容器(是一个DOM元素)
-ReactDom.render(myTest,document.getElementById('app'))
-//Uncaught Error: Target container is not a DOM element.    
+ReactDom.render(
+    <div>
+        <hr />
+        {test_num_01}
+        <hr />
+        {test_num_01 + 12}
+        <hr />
+        {test_dom_01}
+        <hr />
+        {arrStr}
+    </div>
+    , document.getElementById('app')) 
