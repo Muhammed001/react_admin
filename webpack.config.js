@@ -12,9 +12,12 @@ module.exports = {
     plugins: [
         htmlPlugin
     ],
-    module:{//所有第三方模块的匹配规则
-        rules:[//第三方匹配规则
-           {test:/\.js|jsx$/,use:'babel-loader',exclude:/node_modules/},
+    module: {//所有第三方模块的匹配规则
+        rules: [//第三方匹配规则
+            { test: /\.js|jsx$/, use: 'babel-loader', exclude: /node_modules/ },
         ]
     }
+    // resolve: {
+    //     extensions: ['.js', '.jsx', '.json']//这几个后缀名可以省略
+    // }
 };
