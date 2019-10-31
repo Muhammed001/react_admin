@@ -1,5 +1,5 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import '@/04.class实例方法和静态方法.js'
+import CmtList from '@/components/cmt/CmtList'
 
-ReactDom.render(<div>123</div>,document.getElementById('app'))
+ReactDom.render(<div><CmtList></CmtList></div>, document.getElementById('app'))
