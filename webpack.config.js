@@ -15,7 +15,10 @@ module.exports = {
     module: {//所有第三方模块的匹配规则
         rules: [//第三方匹配规则
             { test: /\.js|jsx$/, use: 'babel-loader', exclude: /node_modules/ },
-            { test: /\.css$/, user: ['style-loader', 'css-loader'] } //打包处理css表的第三方loader
+            // 可以在css-loader通过？追加参数
+            // 其中有个固定的参数modules表示普通的css样式表启用模块化
+            { test: /\.css$/, use: ['style-loader', 'css-loader?modules&localIdentName=[path][name]-[local-[hash:5]]'] }, //打包处理css表的第三方loader
+            { test: /\.ttf|woff|woff2|eot|svg$/, use: 'url-loader' }
         ]
     },
     resolve: {//表示别名

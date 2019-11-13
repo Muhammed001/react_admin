@@ -33,6 +33,7 @@
     "webpack-dev-server": "^3.9.0"
   },
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "eslint": "^6.6.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
